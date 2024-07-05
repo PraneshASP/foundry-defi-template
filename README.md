@@ -4,9 +4,11 @@ This is a starter template for [Foundry](https://book.getfoundry.sh/) for DeFi p
 
 #### Read the [blog post](https://flawsomedev.com/blog/ideal-defi-protocol-architecture-solidity-template) for more details. 
 
-### Src directory structure:
+---
 
-```tree
+#### Src directory structure:
+
+```bash
 .
 ├── interfaces
 │   └── external
@@ -22,9 +24,9 @@ This is a starter template for [Foundry](https://book.getfoundry.sh/) for DeFi p
     └── tokenization
 ```
 
-### Tests directory structure:
+#### Tests directory structure:
 
-```tree
+```log
 .
 ├── common
 │   ├── BaseTestSetup.sol
@@ -43,43 +45,43 @@ This is a starter template for [Foundry](https://book.getfoundry.sh/) for DeFi p
             └── Deposit.tree
 ```
 
-## Foundry docs:
+#### Foundry docs:
 
 https://book.getfoundry.sh/
 
 ## Usage
 
-### Build
+#### Build
 
 ```shell
 $ forge build
 ```
 
-### Test
+#### Test
 
 ```shell
 $ forge test
 ```
 
-### Format
+#### Format
 
 ```shell
 $ forge fmt
 ```
 
-### Gas Snapshots
+#### Gas Snapshots
 
 ```shell
 $ forge snapshot
 ```
 
-### Deploy
+#### Deploy
 
 ```shell
 $ forge script script/DeployCore.s.sol:DeployCore --rpc-url <your_rpc_url> --broadcast
 ```
 
-### Help
+#### Help
 
 ```shell
 $ forge --help
