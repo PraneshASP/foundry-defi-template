@@ -2,8 +2,46 @@
 
 This is a starter template for [Foundry](https://book.getfoundry.sh/) for DeFi protocols. The template comes with proper directory structure to get started with your DeFi project. Feel free to tweak it as per the requirements. 
 
-Read the [blog post](https://flawsomedev.com/blog/ideal-defi-protocol-architecture-solidity-template) for more details. 
+#### Read the [blog post](https://flawsomedev.com/blog/ideal-defi-protocol-architecture-solidity-template) for more details. 
 
+### Src directory structure:
+
+```tree
+.
+├── interfaces
+│   └── external
+├── mocks
+└── protocol
+    ├── core
+    ├── integrations
+    │   ├── aave
+    │   └── uniswap
+    ├── libraries
+    ├── misc
+    ├── oracles
+    └── tokenization
+```
+
+### Tests directory structure:
+
+```tree
+.
+├── common
+│   ├── BaseTestSetup.sol
+│   ├── BaseTestSetupLive.sol
+│   └── harness
+│       └── VaultHarness.sol
+├── fork
+│   └── vault
+│       ├── Deposit.t.sol
+│       └── trees
+│           └── Deposit.tree
+└── unit
+    └── vault
+        ├── Deposit.t.sol
+        └── trees
+            └── Deposit.tree
+```
 
 ## Foundry docs:
 
