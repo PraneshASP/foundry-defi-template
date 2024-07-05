@@ -1,15 +1,11 @@
-## Foundry
+## Foundry DeFi Template
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This is a starter template for [Foundry](https://book.getfoundry.sh/) for DeFi protocols. The template comes with proper directory structure to get started with your DeFi project. Feel free to tweak it as per the requirements. 
 
-Foundry consists of:
+Read the [blog post](https://flawsomedev.com/blog/ideal-defi-protocol-architecture-solidity-template) for more details. 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## Documentation
+## Foundry docs:
 
 https://book.getfoundry.sh/
 
@@ -39,16 +35,10 @@ $ forge fmt
 $ forge snapshot
 ```
 
-### Anvil
-
-```shell
-$ anvil
-```
-
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployCore.s.sol:DeployCore --rpc-url <your_rpc_url> --broadcast
 ```
 
 ### Cast
@@ -61,6 +51,4 @@ $ cast <subcommand>
 
 ```shell
 $ forge --help
-$ anvil --help
-$ cast --help
 ```

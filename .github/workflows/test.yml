@@ -1,4 +1,4 @@
-name: test
+name: Test
 
 on: workflow_dispatch
 
@@ -22,13 +22,12 @@ jobs:
         with:
           version: nightly
 
-      - name: Run Forge build
+      - name: Run Unit tests
         run: |
-          forge --version
-          forge build --sizes
-        id: build
+          forge test --mt UnitTest -vvv
+        id: test
 
-      - name: Run Forge tests
+      - name: Run Fork tests
         run: |
-          forge test -vvv
+          forge test --mt ForkTest -vvv
         id: test
