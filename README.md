@@ -1,4 +1,4 @@
-## Foundry DeFi Template
+## 🛡️ Foundry DeFi Template 🛡️
 
 This is a starter template for [Foundry](https://book.getfoundry.sh/) for DeFi protocols. The template comes with proper directory structure to get started with your DeFi project. Feel free to tweak it as per the requirements. 
 
@@ -39,12 +39,6 @@ $ forge snapshot
 
 ```shell
 $ forge script script/DeployCore.s.sol:DeployCore --rpc-url <your_rpc_url> --broadcast
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
 ```
 
 ### Help
